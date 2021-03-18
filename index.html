@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<head>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="https://raw.githubusercontent.com/DamianBednarczyk/certifications/master/favicon.png" />
-
+<html
+head>
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+	<link href="index_pliki/css2.css" rel="stylesheet">
+	<link rel="shortcut icon" href="https://raw.githubusercontent.com/DamianBednarczyk/certifications/master/favicon.png">
     <title>Damian Bednarczyk</title>
-        <meta name="viewport" content="width=device-width">
     <!-- source of loader: https://freefrontend.com/css-loaders/ -->
 <style>
-     body{
+body{
             width: 100%;
             height: 100vh;
             background-color: #555;
@@ -17,47 +18,48 @@
             align-items: center;
             }
 			
-	.water{
-		transition: transform 7s;
-		-webkit-transition: transform 7s;
-		transition-timing-function:linear;
-		-webkit-transition-timing-function: cubic-bezier(0,.21,1,-0.83);
-			width:400px;
-            height: 400px;
+.water{
+			transition: transform 7s;
+			-webkit-transition: transform 7s;
+			transition-timing-function:linear;
+			-webkit-transition-timing-function: cubic-bezier(0,.21,1,-0.83);
+			width:300px;
+            height: 300px;
             background-color: skyblue;
             border-radius: 50%;
             position: relative;
+			top:100px;
             box-shadow: inset 0 0 30px 0 rgba(0,0,0,.5), 0 4px 10px 0 rgba(0,0,0,.5);
             overflow: hidden;
-			
-        }
+			}
 			
 .water:hover {
-    transform:translate(-700px, 0px);
-    -webkit-transform:translate(-700px, 0px);
+			transform:translate(-700px, 0px);
+			-webkit-transform:translate(-700px, 0px);
 }
-        .water:before, .water:after{
+
+.water:before, .water:after{
             content:'';
             position: absolute;
             width:400px;
             height: 400px;
-            top:-150px;
+            top:-200px;
             background-color: #fff;
         }
 
-        .water:before{
+.water:before{
             border-radius: 45%;
             background:rgba(255,255,255,.7);
             animation:wave 5s linear infinite;
         }
 
-        .water:after{
+.water:after{
             border-radius: 35%;
             background:rgba(255,255,255,.3);
             animation:wave 5s linear infinite;
         }
 
-        @keyframes wave{
+@keyframes wave{
             0%{
                 transform: rotate(0);
             }
@@ -67,22 +69,46 @@
         }
 
 .name {
-position:absolute;
-font-family: 'Montserrat', sans-serif;
-            }
+	position:absolute;
+	top: 5%;
+	font-family: 'Montserrat', sans-serif;
+	background: linear-gradient(to left, white, gold, black, black);
+	background-size: 300%;
+	animation: gradient 14s ease-in-out infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	}
 	
+@keyframes 
+gradient {
+  0% {
+    background-position: 0%;
+  }
+  10% {
+    background-position:  0%;
+  }
+  
+  15% {
+    background-position:  100%;
+  }
+  16% {
+    background-position:  100%;
+  }
+  31% {
+    background-position:  0%;
+  }
+  100% {
+    background-position:  0%;
+  }
+}
 	
 </style>
 </head>
-<html>
 <body>
-<div class="name">
-  <h1>Damian Bednarczyk </h1>
-  <h4>website under construction</h2>
-</div>
-<div class="water"></div>
-    
-
-
+	<div class="name">
+		<h1>Damian Bednarczyk </h1>
+		<h4>website under construction</h4>
+	</div>
+	<div class="water"></div>
 </body>
 </html>

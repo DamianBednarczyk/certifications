@@ -1,3 +1,4 @@
+/* 1 general style */
 body{
             width: 100%;
             height: 100vh;
@@ -6,7 +7,8 @@ body{
             justify-content: center;
             align-items: center;
             }
-			
+/* 2 loader 
+source: https://freefrontend.com/css-loaders/  */
 .water{
 			transition: transform 7s;
 			-webkit-transition: transform 7s;
@@ -26,7 +28,6 @@ body{
 			transform:translate(-700px, 0px);
 			-webkit-transform:translate(-700px, 0px);
 }
-
 .water:before, .water:after{
             content:'';
             position: absolute;
@@ -35,19 +36,16 @@ body{
             top:-200px;
             background-color: #fff;
         }
-
 .water:before{
             border-radius: 45%;
             background:rgba(255,255,255,.7);
             animation:wave 5s linear infinite;
         }
-
 .water:after{
             border-radius: 35%;
             background:rgba(255,255,255,.3);
             animation:wave 5s linear infinite;
         }
-
 @keyframes wave{
             0%{
                 transform: rotate(0);
@@ -56,7 +54,7 @@ body{
                 transform: rotate(360deg);
             }
         }
-
+/* 3 headers */
 .name {
 	position:absolute;
 	top: 5%;
@@ -67,7 +65,6 @@ body{
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	}
-	
 @keyframes 
 gradient {
   0% {
@@ -89,4 +86,60 @@ gradient {
   100% {
     background-position:  0%;
   }
+}
+/* 4 cookies 
+source https://github.com/htulibacki/grafmag-cookieinfo */
+#cookieinfo * {
+    margin: 0px;
+    padding: 0px;
+}
+#cookieinfo {
+    position: fixed;
+    font-size: 12px;
+    font-family: Arial, Verdana, sans-serif;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: #323334; 
+    padding: 20px;
+    box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+#cookieinfo h6 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #cdd7da;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+    margin-bottom: 7px;
+}
+#cookieinfo p {
+    font-size: 12px;
+    color: #afb4bc;
+    line-height: 1.5em;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+}
+#cookieinfo a {
+    font-size: 12px;
+    color: #afb4bc;
+    line-height: 1.5em;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+}
+#cookieinfo .close {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    line-height: 22px;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ff6000;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+#cookieinfo a:hover {
+    background-color: #ff7925; 
 }
